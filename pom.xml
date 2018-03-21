@@ -8,27 +8,54 @@
     <artifactId>string-smilarity</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-<dependencies>
-    <!-- for starting spring-boot project -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-        <version>1.3.5.RELEASE</version>
-    </dependency>
+    <dependencies>
+        <!-- for starting spring-boot project -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
 
-    <!-- for string smilarity algorithms -->
-    <dependency>
-        <groupId>info.debatty</groupId>
-        <artifactId>java-string-similarity</artifactId>
-        <version>0.23</version>
-    </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
 
-    <!-- for text file interactions -->
-    <dependency>
-        <groupId>com.univocity</groupId>
-        <artifactId>univocity-parsers</artifactId>
-        <version>2.1.2</version>
-        <type>jar</type>
-    </dependency>
-</dependencies>
+        <!-- for string smilarity algorithms -->
+        <dependency>
+            <groupId>info.debatty</groupId>
+            <artifactId>java-string-similarity</artifactId>
+            <version>0.23</version>
+        </dependency>
+
+        <!-- for text file interactions -->
+        <dependency>
+            <groupId>com.univocity</groupId>
+            <artifactId>univocity-parsers</artifactId>
+            <version>2.1.2</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.10</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

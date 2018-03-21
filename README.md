@@ -7,5 +7,5 @@ Bu proje, girilen kelimeyi veri tabanında aratıp, ona en yakınları üstte g�
 * Levenshtein algoritması :   kelime yakınlığını bulmak için kullanılıyor. buna benzer başka kelime benzerlik algoritmaları string-smilarity kütüphanesinde yer almaktadır.
 * univocity               :   metin dosyasıyla etkileşim için kullanılmaktadır.
 * maven                   :   kütüphane deposudur. bunun yerine gradle da kullanılabilirdi.
-
+* lombok                  :   pojo'ların getter, setter ve default constactor methodlarını çalışma zamanında hazırlar. sınıf içinde kuru kalabalığını önlemiş olur.
 
