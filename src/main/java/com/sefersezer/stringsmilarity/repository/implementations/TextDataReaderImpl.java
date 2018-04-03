@@ -20,7 +20,7 @@ public class TextDataReaderImpl implements DataReader {
         settings.getFormat().setLineSeparator("\n");
         settings.getFormat().setQuote('"');
         settings.setHeaderExtractionEnabled(true);
-        settings.setMaxCharsPerColumn(-1);
+//        settings.setMaxCharsPerColumn(-1);
 
         CsvParser parser = new CsvParser(settings);
         return parser.parseAll(getReader(path));

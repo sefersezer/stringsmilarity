@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@RequestMapping("/search")
+@RequestMapping("/ws")
 public interface DataReaderService {
 
-    @RequestMapping(value = "/a",method = RequestMethod.GET)
-    ResponseEntity<List<String>>  search(@RequestParam("text") String text);
+    @RequestMapping(value = "/search",method = RequestMethod.GET)
+    ResponseEntity<List<String>>  search(@RequestParam("term") String term);
 
 }
